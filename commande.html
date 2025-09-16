@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Butinerie - Boutique & Mode d'emploi</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo"><a href="https://butinerie.com/"><img src="logo.png" alt=""></a></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="showSection('boutique')" class="nav-link active">Boutique</a></li>
+                    <li><a href="#" onclick="showSection('mode-emploi')" class="nav-link">Mode d'emploi</a></li>
+                    <li><a href="#" onclick="showSection('butinerie')" class="nav-link">La Butinerie</a></li>
+                </ul>
+            </nav>
+            <div class="cart">0,00 €</div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- BOUTIQUE SECTION -->
+        <section id="boutique" class="section">
+            <div class="welcome-section">
+                <h1 class="welcome-title">Bonjour et bienvenue !</h1>
+                <p class="welcome-message">Le repas du jour est disponible à partir de 13h à emporter. Vous pouvez aussi déjeuner sur place à la cantine à 12h45.</p>
+                <div class="consigne-info">
+                    <strong>Les prix affichés ci-dessous comprennent une consigne remboursable de 5€ pour le plat et 1€ pour le dessert.</strong>
+                </div>
+                <p style="margin-top: 1rem; color: #7f8c8d;">C'est votre première visite ? N'hésitez pas à consulter le <a href="#" onclick="showSection('mode-emploi')" style="color: #27ae60; text-decoration: none; font-weight: bold;">Mode d'emploi</a>.</p>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title"> Nos Entrées</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Disponible selon le menu du jour</h3>
+                        <p>Entrées bio et de saison préparées avec des produits locaux</p>
+                        <div class="price">À partir de 6,00 € (consigne incluse)</div>
+                        <button class="add-to-cart">Voir le menu</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title">Nos Plats</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Plat du jour</h3>
+                        <p>Plat bio, végétarien et de saison préparé avec des ingrédients locaux</p>
+                        <div class="price">Menu du jour disponible sur place</div>
+                        <button class="add-to-cart">Voir le menu</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title"> Nos Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Dessert du jour</h3>
+                        <p>Desserts faits maison avec des ingrédients bio et de saison</p>
+                        <div class="price">À partir de 4,00 € (consigne incluse)</div>
+                        <button class="add-to-cart">Voir le menu</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-disclaimer">
+                <em>*Photos non contractuelles</em>
+            </div>
+        </section>
+
+        <!-- MODE D'EMPLOI SECTION -->
+        <section id="mode-emploi" class="section hidden">
+            <div class="hero-section">
+                <h1 class="hero-title">Mode d'emploi</h1>
+                <p class="hero-subtitle">Pas le temps de cuisiner ce midi ? Envie d'un petit plat pour ce soir ?</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h2 class="step-title">Commandez en ligne</h2>
+                    <p class="step-description">
+                        Commandez votre repas sur ce site <span class="highlight">à partir de 10h</span>. 
+                        Parcourez notre sélection de plats bio, végétariens et de saison.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h2 class="step-title">Venez retirer</h2>
+                    <p class="step-description">
+                        Venez récupérer votre commande <span class="highlight">de 13h à 20h</span> à la Butinerie. 
+                        Votre repas vous attend, fraîchement préparé !
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h2 class="step-title">Régalez-vous !</h2>
+                    <p class="step-description">
+                        Savourez votre petit plat <span class="highlight">bio, végé et de saison</span> ! 
+                        Vous pouvez aussi manger sur place dans notre espace café à toute heure.
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: #F2c1c1; margin-bottom: 1rem;">🌱 Découvrez aussi notre cantine participative !</h3>
+                <p style="color: #7f8c8d;">Une formule qui permet aussi de manger sur place à toute heure dans l'espace café ! Et si vous avez un peu plus de temps, découvrez la cantine participative de la Butinerie !</p>
+            </div>
+
+            <div class="zero-waste-section">
+                <h2 class="section-title">
+                    <span class="icon"></span>
+                    Zéro déchet avec nos contenants consignés
+                </h2>
+                <p>Les repas à emporter sont proposés dans des contenants en verre consignés pour une démarche éco-responsable. Ces contenants sont automatiquement intégrés à votre commande et vous pouvez les rapporter à tout moment pour récupérer votre consigne en espèces.</p>
+                
+                <div class="container-info">
+                    <div class="container-card">
+                        <h3> Contenant pour les plats</h3>
+                        <p><strong>Consigne : 5€</strong></p>
+                        <p>Contenant en verre réutilisable pour vos plats principaux.</p>
+                    </div>
+                    
+                    <div class="container-card">
+                        <h3> Contenant pour les desserts</h3>
+                        <p><strong>Consigne : 1€</strong></p>
+                        <p>Petit contenant en verre parfait pour nos desserts maison.</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; padding: 1.5rem; background: #e8f5e8; border-radius: 10px; border-left: 4px solid #F2c1c1;">
+                    <h3 style="color: #ec2c5c; margin-bottom: 1rem;"> Astuce éco-malin !</h3>
+                    <p>Si vous commandez un nouveau repas et que vous avez déjà un contenant de la Butinerie, cochez la case dédiée pour déduire le montant correspondant de votre commande. N'oubliez pas de rapporter le contenant en récupérant votre repas !</p>
+                    <div class="repas"><div><img src="1.png" alt=""></div><div><img src="2.png" alt=""></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LA BUTINERIE SECTION -->
+        <section id="butinerie" class="section hidden">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h1 style="font-size: 3rem; color: #ec2c5c; margin-bottom: 1rem;">La Butinerie</h1>
+                <p style="font-size: 1.3rem; color: #7f8c8d;">Plus qu'un restaurant, un lieu de partage et de convivialité</p>
+            </div>
+
+            <div style="background: white; border-radius: 15px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 3rem;">
+                <h2 style="color: #2c3e50; margin-bottom: 1.5rem; text-align: center;"> Notre philosophie</h2>
+                <p style="color: #7f8c8d; text-align: center; font-size: 1.1rem; line-height: 1.8;">
+                    La Butinerie est un espace dédié à la cuisine bio, végétarienne et de saison. Nous proposons une approche participative de la restauration, où chacun peut découvrir, apprendre et partager autour de la bonne cuisine. Notre cantine participative vous invite à cuisiner ensemble et à déjeuner dans une ambiance conviviale.
+                </p>
+            </div>
+
+            <div style="background: white; border-radius: 15px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 3rem;">
+                <h2 style="color: #2c3e50; margin-bottom: 1.5rem; text-align: center;"> Cantine participative</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center; padding: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;"></div>
+                        <h3 style="color: #F2c1c1; margin-bottom: 0.5rem;">On cuisine ensemble</h3>
+                        <p style="color: #7f8c8d;">Rejoignez-nous à 9h30 pour préparer ensemble les repas du jour dans une ambiance conviviale.</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;"></div>
+                        <h3 style="color: #F2c1c1; margin-bottom: 0.5rem;">On déjeune ensemble</h3>
+                        <p style="color: #7f8c8d;">À 12h45, partagez un repas convivial avec les autres participants dans notre espace cantine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   
+    </main>
+
+
+
+     
+        <section class="footer-section">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3> Contact & Horaires</h3>
+                    <div class="contact-detail">32 rue de l'Ancien Canal / 209 av. Jean Lolive<br>93500 Pantin</div>
+                    <div class="contact-detail">06 66 33 56 32</div>
+                    <div class="contact-detail">cantine@butinerie.com</div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3> Horaires d'ouverture</h3>
+                    <div class="hours-detail">
+                        <strong>Ouverture :</strong> Mercredi au samedi de 10h à 20h
+                    </div>
+                    <div class="hours-detail">
+                        <strong>Cuisine participative :</strong> Mercredi au samedi
+                    </div>
+                    <div class="hours-detail">
+                        <strong>On cuisine :</strong> 9h30 | <strong>On déjeune :</strong> 12h45
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #34495e; color: #bdc3c7;">
+                Copyright © 2025 | La Butinerie
+            </div>
+        </section>
+
+
+
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.add('hidden'));
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+            
+            // Update active nav link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Add to cart functionality (basic)
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartDisplay = document.querySelector('.cart');
+            let total = 0;
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const menuItem = this.closest('.menu-item');
+                    const priceText = menuItem.querySelector('.price').textContent;
+                    const price = parseFloat(priceText.match(/\d+,\d+/)[0].replace(',', '.'));
+                    
+                    total += price;
+                    cartDisplay.textContent = total.toFixed(2).replace('.', ',') + ' €';
+                    
+                    // Visual feedback
+                    this.textContent = 'Ajouté !';
+                    this.style.background = '#2ecc71';
+                    
+                    setTimeout(() => {
+                        this.textContent = 'Ajouter';
+                        this.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
